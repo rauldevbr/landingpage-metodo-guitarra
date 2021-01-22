@@ -20,7 +20,13 @@ Paleta de Cores
 						#3f1c05
 */
 
-/* reset */
+/*
+Breakpoints
+ 960px
+ 740px
+*/
+
+/****** reset ******/
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -59,6 +65,7 @@ body {
 	background-color: red;
 }
 
+/* header */
 .header-principal {
 	background-color: #2a2b2a;
 }
@@ -73,6 +80,21 @@ body {
 	padding: 10px 0;
 }
 
+/* tablet */
+@media (min-width: 740px) and (max-width: 980px) {
+	body {
+		background-color: blue;
+	}
+}
+
+/* mobile */
+@media (max-width: 739px) {
+	body {
+		background-color: green;
+	}
+}
+
+/****** section 1 - oferta ******/
 .oferta {
 	background-image: radial-gradient(#fff, #ccc);
 	border-top: 3px solid #3f3f3f;
@@ -83,12 +105,13 @@ body {
 	max-width: 960px;
 	margin: 0 auto;
 	text-align: center;	
-	padding: 20px 0 80px 0;		
+	padding: 40px 0 80px 0;		
 }
 
 .oferta-container p {	
 	line-height: 1.3rem;
 	padding: 10px 0;	
+	font-size: 1.333rem;
 	/* font-feature-settings: "clig"; */
 	/* font-style: oblique;	 */
 }
@@ -133,6 +156,27 @@ body {
 	background-color:#54cec1;
 }
 
+/* tablet */
+@media (min-width: 740px) and (max-width: 980px) {
+	.oferta-container p {
+		max-width: 600px;
+		margin: 0 auto;
+	}
+}
+
+/* mobile */
+@media (max-width: 739px) {
+	.oferta-container p {
+		max-width: 300px;
+		margin: 0 auto;
+	}
+
+	.button_buy {
+		font-size: 1rem;
+	}
+}
+
+/****** section 2 - tempo ******/
 .tempo {
 	background-color: #f06b0e;
 }
@@ -144,20 +188,22 @@ body {
 }
 
 .tempo-container h3 {
-	text-transform: uppercase;
-	font-weight: bolder;
-	font-size: 1.777rem;
-	line-height: 1.9rem;
-}
-
-.tempo-container h2 {
 	font-size: 1.333rem;
 	font-weight: bolder;
 	max-width: max-content;
 	text-transform: uppercase;
+	text-align: center;
 	line-height: 3rem;
 	margin: 60px auto;	
 	color: #fff;
+}
+
+.tempo-container h2 {
+	text-transform: uppercase;
+	font-weight: bolder;
+	font-size: 1.777rem;
+	line-height: 1.9rem;
+	text-align: center;
 }
 
 .tempo-icons::before {
@@ -182,7 +228,6 @@ body {
 }
 
 .tempo-icon figcaption {
-	border: 1px solid blue;
 	text-align: center;
 	background-color: #000;
 	color: #fff;
@@ -190,6 +235,54 @@ body {
 	padding: 5px 0;
 }
 
+/* tablet */
+@media (min-width: 740px) and (max-width: 980px) {
+
+	.tempo-icons {
+		max-width: 720px;
+		margin: 60px auto;
+	}
+
+	.tempo-icon {
+		width: 134px;
+	}
+
+	.tempo-container h2 {
+		font-size: 1.333rem;
+		width: 680px;
+		margin: 0 auto;
+	}
+
+	.tempo-container h3 {
+		line-height: 2rem;
+		margin: 50px auto;	
+	}
+}
+
+/* mobile */
+@media (max-width: 739px) {
+	.tempo-icons {
+		max-width: 300px;
+		margin: 60px auto;
+	}
+
+	.tempo-icon {
+		width: 50px;
+	}
+
+	.tempo-container h2 {
+		font-size: 1.333rem;
+		width: 300px;
+		margin: 0 auto;
+	}
+
+	.tempo-container h3 {
+		line-height: 2rem;
+		margin: 50px auto;	
+	}
+}
+
+/****** section 3 - feito ******/
 .feito {
 	background-color: #fff;
 }
@@ -205,7 +298,7 @@ body {
 	text-align: center;
 	font-size: 1.777rem;
 	font-weight: bolder;
-	padding: 60px 0;
+	padding: 40px 0;
 }
 
 .feito-boxes::before {
@@ -239,6 +332,57 @@ body {
 	margin: 0 auto;
 }
 
+/* tablet */
+@media (min-width: 740px) and (max-width: 980px) {
+	.feito-boxes {
+		max-width: 720px;
+		margin: 0 auto;
+	}
+
+	.feito-box {		
+		max-width: 340px;
+	}
+	
+	.feito-box h4 {
+		margin: 20px 0 20px 0;
+	}
+
+	.feito-header {
+		padding: 40px 0;		
+	}
+
+	.feito-container {
+		padding: 40px 0;
+	}
+}
+
+/* mobile */
+@media (max-width: 739px) {
+	.feito-boxes {		
+		max-width: 300px;
+		margin: 0 auto;
+	}
+
+	.feito-header {
+		padding: 30px 0;
+		font-size: 1.333rem;		
+	}
+
+	.feito-box {
+		float: none;
+		margin-bottom: 20px;
+	}
+
+	.feito-box h4 {
+		margin: 20px 0 10px 0;
+	}
+
+	.feito-container {
+		padding: 20px 0;
+	}
+}
+
+/****** footer ******/
 .footer {
 	background: #2a2b2a;
 	padding: 60px 0 90px 0;
@@ -247,7 +391,6 @@ body {
 .footer-container {
 	max-width: 960px;
 	margin: 0 auto;
-
 }
 
 .footer-container::before, .footer-container::after {
@@ -312,4 +455,49 @@ body {
 .footer .button_assinar:hover {
 	background-color: #40f316;
   	color: #2a2b2a;
+}
+
+/* tablet */
+@media (min-width: 740px) and (max-width: 980px) {
+	.footer-container {
+		max-width: 720px;
+		margin: 0 auto;
+	}
+
+	.logo-footer-img {
+		width: 340px;		
+	}
+
+	.footer form {
+		width: 340px;
+	}
+
+	.footer .button_assinar {
+		width: 30%;
+	}
+}
+
+/* mobile */
+@media (max-width: 739px) {
+	.footer-container {
+		max-width: 300px;
+		margin: 0 auto;
+	}
+
+	.logo-footer-img {
+		width: 300px;		
+	}
+
+	.footer form {
+		width: 300px;
+		margin-top: 20px;
+	}
+
+	.footer input {
+		width: 300px;
+	}
+
+	.footer .button_assinar {
+		width: 30%;
+	}
 }
