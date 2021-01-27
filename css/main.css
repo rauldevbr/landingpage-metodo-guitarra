@@ -11,20 +11,28 @@ Escala Tipografia - Perfect Fourth
 0.563rem
 0.422rem
 
-Paleta de Cores
-						#ff6b42
-#a6a6a6	#666666 #3f3f3f	#2a2b2a
-#98eedb #74dfd4 #54cec1 #37bfb1 #1eafa0 #099f90 #018692 
-	                    #40f316
-					    #f18f01
-						#3f1c05
+/*Paleta de Cores*/
+/*
+:root {
+	--primaria1: #fef5e0;
+	--primaria2: #fed6bf;
+	--primaria3: #402f5b;
+	--secundaria: #9d2fc6;
+	--destaque1: #df45cf;
+	--destaque2: #05704c;
+	--hover: #0d8b8c;
+}
 */
 
-/*
-Breakpoints
- 960px
- 740px
-*/
+:root {
+	--primaria1: #f3ffa5
+	--primaria2: #b4fe72;
+	--primaria3: #510498;
+	--secundaria: #24ddd6;
+	--destaque1: #710389;
+	--destaque2: #f2ea1c;
+	--hover: #e0fc42;
+}
 
 /****** reset ******/
 html, body, div, span, applet, object, iframe,
@@ -44,9 +52,6 @@ time, mark, audio, video {
 	padding: 0;
 	border: 0;
 	text-decoration: none;	
-	/* font-size: 100%; */
-	/* font: inherit; */
-	/* vertical-align: baseline; */
 }
 
 * {
@@ -59,15 +64,17 @@ img {
 }
 
 body {
-	font-family: "Montserrat", "Helvetica", "Arial", "sans-serif";
-	color: #2a2b2a;
-	font-size: 1rem;
-	background-color: red;
+	font-family: 'Sarabun', sans-serif;
+	color: #2a2b2a;	
+	background-color: var(--primaria1);
+	/* background: #f18f01 url("/img/guitar-background-1.jpg") no-repeat fixed center;	
+	background-size: cover;
+	background-blend-mode: darken; */
 }
 
 /* header */
 .header-principal {
-	background-color: #2a2b2a;
+	background-color: var(--primaria3);
 }
 
 .header-container {
@@ -77,28 +84,26 @@ body {
 
 .logo {	
 	margin: 0 auto;	
-	padding: 10px 0;
+	padding: 10px 0;	
 }
 
 /* tablet */
 @media (min-width: 740px) and (max-width: 980px) {
 	body {
-		background-color: blue;
+
 	}
 }
 
 /* mobile */
 @media (max-width: 739px) {
 	body {
-		background-color: green;
+
 	}
 }
 
 /****** section 1 - oferta ******/
 .oferta {
-	background-image: radial-gradient(#fff, #ccc);
-	border-top: 3px solid #3f3f3f;
-	border-bottom: 3px solid #3f3f3f;
+
 }
 
 .oferta-container {
@@ -134,26 +139,40 @@ body {
 
 .button_buy {
 	border-radius: 15px;
-	color: rgba(0, 0, 0, 0.8);
-	background-color: #40f316;
+	color: var(--primaria1);
+	background-color: var(--destaque2);
 	text-decoration: none;
 	text-align: center;
 	font-size: 1.333rem;
 	font-weight: bolder;
 	text-transform: uppercase;
-	/* letter-spacing: .1em; */
-	/* white-space: nowrap; */
 	display: block;
 	width: 70%;
 	padding: 20px 0;
 	margin: 20px auto 0 auto;
 	transition-duration: 0.4s;
 	box-shadow: 5px 5px 30px #2a2b2a;
-	/* text-shadow: 1px 1px #2a2b2a; */
+}
+
+.button_buy_2 {
+	border-radius: 15px;
+	color: var(--primaria1);
+	background-color: var(--destaque1);
+	text-decoration: none;
+	text-align: center;
+	font-size: 1.333rem;
+	font-weight: bolder;
+	text-transform: uppercase;
+	display: block;
+	width: 70%;
+	padding: 20px 0;
+	margin: 20px auto 0 auto;
+	transition-duration: 0.4s;
+	box-shadow: 5px 5px 30px #2a2b2a;
 }
 
 .button_buy:hover {
-	background-color:#54cec1;
+	background-color: var(--hover);
 }
 
 /* tablet */
@@ -178,20 +197,20 @@ body {
 
 /****** section 2 - tempo ******/
 .tempo {
-	background-color: #f06b0e;
+	background-color: var(--primaria3);
 }
 
 .tempo-container {
 	max-width: 960px;
 	margin: 0 auto;	
-	padding: 80px 0 60px 0;
+	padding: 80px 0 60px 0;	
+	text-transform: uppercase;
 }
 
 .tempo-container h3 {
 	font-size: 1.333rem;
 	font-weight: bolder;
 	max-width: max-content;
-	text-transform: uppercase;
 	text-align: center;
 	line-height: 3rem;
 	margin: 60px auto;	
@@ -204,6 +223,7 @@ body {
 	font-size: 1.777rem;
 	line-height: 1.9rem;
 	text-align: center;
+	color: var(--primaria1);
 }
 
 .tempo-icons::before {
@@ -219,20 +239,24 @@ body {
 }
 
 .tempo-icons {
-	margin: 60px 0;	
+	margin: 60px auto;	
 }
 
 .tempo-icon {
-	float: left;
-	margin: 0 5px;
+	float: left;	
+}
+
+.tempo-icon img {
+	margin: 0 5px;	
 }
 
 .tempo-icon figcaption {
 	text-align: center;
-	background-color: #000;
-	color: #fff;
+	background-color: var(--secundaria);
+	color: var(--primaria3);
+	font-weight: bold;
 	margin-top: 10px;
-	padding: 5px 0;
+	padding: 5px;	
 }
 
 /* tablet */
@@ -284,21 +308,26 @@ body {
 
 /****** section 3 - feito ******/
 .feito {
-	background-color: #fff;
+	/* background-color: #fff; */
 }
 
 .feito-container {
 	max-width: 960px;
 	margin: 0 auto;	
-	padding: 80px 0;
+	padding: 80px 0;	
 }
 
 .feito-header {
-	background-color: #018692;
+	background-color: var(--secundaria);
 	text-align: center;
 	font-size: 1.777rem;
 	font-weight: bolder;
 	padding: 40px 0;
+	text-transform: uppercase;	
+}
+
+.feito-header p {
+	color: var(--primaria1);	
 }
 
 .feito-boxes::before {
@@ -316,20 +345,33 @@ body {
 .feito-box {
 	max-width: 460px;
 	float: left;
-	margin: 0 5px;
+	margin: 0 10px;
 }
 
 .feito-box h4, .feito-box p {
 	text-align: center;
+	font-size: 1.333rem;
 }
 
 .feito-box h4 {
 	text-transform: uppercase;
-	margin: 20px 0 30px 0;
+	margin: 20px 0 20px 0;
 }
 
 .feito-box img {
-	margin: 0 auto;
+	margin: 0 auto;	
+	padding-left: 20px;
+}
+
+.iniciante {
+	width: 150px;
+	height: 150px;
+}
+
+.intermediario {
+	width: 150px;
+	height: 150px;	
+	padding: 5px;
 }
 
 /* tablet */
@@ -371,6 +413,7 @@ body {
 	.feito-box {
 		float: none;
 		margin-bottom: 20px;
+		margin-top: 20px;
 	}
 
 	.feito-box h4 {
@@ -384,7 +427,7 @@ body {
 
 /****** footer ******/
 .footer {
-	background: #2a2b2a;
+	background-color:var(--primaria3);
 	padding: 60px 0 90px 0;
 }
 
@@ -438,7 +481,7 @@ body {
 .footer .button_assinar {
 	border-radius: 15px;
 	color: #fff;
-	border-color: #40f316;
+	border-color: var(--destaque1);
 	background: none;
 	text-decoration: none;
 	text-align: center;
@@ -453,7 +496,7 @@ body {
 }
 
 .footer .button_assinar:hover {
-	background-color: #40f316;
+	background-color: var(--destaque1);
   	color: #2a2b2a;
 }
 

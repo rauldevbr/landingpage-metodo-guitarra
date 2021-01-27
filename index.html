@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt">
 
 <head>
 	<title>Método Guitarra</title>
@@ -9,6 +9,17 @@
 	<meta name="description" content="Aprenda a tocar guitarra e violão com
 									  um método simples e fácil, sendo iniciante
 									  ou intermediário a música é para todos">
+	<link rel="shortcut icon" type="image/x-icon" href="img/icon.ico">
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link
+		href="https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="css/main.css" />
+
+	<!-- JIVO Chat -->
+	<script src="//code.jivosite.com/widget/3iKRTDHhHS" async></script>
+
 	<!-- Facebook Pixel Code -->
 	<script>
 		!function (f, b, e, v, n, t, s) {
@@ -25,17 +36,8 @@
 		fbq('init', '1253859414984023');
 		fbq('track', 'PageView');
 	</script>
-	<noscript><img height="1" width="1" style="display:none"
-			src="https://www.facebook.com/tr?id=1253859414984023&ev=PageView&noscript=1"></noscript>
+
 	<!-- End Facebook Pixel Code -->
-
-	<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
-	<link rel="stylesheet" href="css/main.css" />
-
-	<!-- JIVO Chat -->
-	<script src="//code.jivosite.com/widget/3iKRTDHhHS" async></script>
-
-	<link rel="shortcut icon" type="image/x-icon" href="img/icon.ico">
 </head>
 
 <body>
@@ -79,26 +81,22 @@
 					QUERO FAZER PARTE DO MÉTODO GUITARRA AGORA!
 				</div>
 			</a>
-			<div class="tempo-icons">
+			<div class="tempo-icons">				
 				<figure class="tempo-icon">
 					<img src="img/icon01.png" alt="icone 1">
-					<figcaption>caption img 01</figcaption>
+					<figcaption>Plataforma Segura</figcaption>
 				</figure>
 				<figure class="tempo-icon">
-					<img src="img/icon02.png"  alt="icone 2">
-					<figcaption>caption img 01</figcaption>
+					<img src="img/icon02.png" alt="icone 2">
+					<figcaption>Garantia de 30 dias</figcaption>
 				</figure>
 				<figure class="tempo-icon">
-					<img src="img/icon03.png"  alt="icone 3">
-					<figcaption>caption img 01</figcaption>
+					<img src="img/icon03.png" alt="icone 3">
+					<figcaption>Acesso Vitalício</figcaption>
 				</figure>
 				<figure class="tempo-icon">
-					<img src="img/icon04.png"  alt="icone 4">
-					<figcaption>caption img 01</figcaption>
-				</figure>
-				<figure class="tempo-icon">
-					<img src="img/icon05.png"  alt="icone 5">
-					<figcaption>caption img 01</figcaption>
+					<img src="img/icon04.png" alt="icone 4">
+					<figcaption>Atualização Constante</figcaption>
 				</figure>
 			</div>
 		</div>
@@ -111,14 +109,14 @@
 		<div class="feito-container">
 			<div class="feito-boxes">
 				<div class="feito-box">
-					<img src="img/guitarrista-iniciante.png"  alt="guitarrista iniciante">
+					<img class="iniciante" src="img/iniciante.svg" alt="guitarrista iniciante">
 					<h4>iniciante</h4>
 					<p>Comece do zero desde os primeiros exercícios
 						básicos até tocar suas primeiras músicas.
 					</p>
 				</div>
 				<div class="feito-box">
-					<img src="img/guitarrista-intermediario.png"  alt="guitarrista intermediario">
+					<img class="intermediario" src="img/intermediario.svg" alt="guitarrista intermediario">
 					<h4>intermediário</h4>
 					<p>Organize seu cronograma de estudos e revise
 						os conceitos que já sabe.
@@ -131,9 +129,9 @@
 	<footer class="footer">
 		<div class="footer-container">
 			<div class="logo-footer-img">
-				<img src="img/logo-footer.png"  alt="logotipo"/>
+				<img src="img/logo-footer.png" alt="logotipo" />
 			</div>
-			<form action="">
+			<form action="welcome.php" method="POST">
 				<label for="email">Email:</label>
 				<input type="text" id="email" name="email" placeholder="Seu melhor email aqui"><br>
 				<label for="nome">Seu nome:</label>
@@ -142,6 +140,8 @@
 			</form>
 		</div>
 	</footer>
+
+	<script src="js/main.js"></script>
 </body>
 
 </html>
