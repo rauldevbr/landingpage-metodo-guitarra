@@ -25,13 +25,13 @@ Escala Tipografia - Perfect Fourth
 */
 
 :root {
-	--primaria1: #f3ffa5
+	--primaria1: #f3ffa5;
 	--primaria2: #b4fe72;
 	--primaria3: #510498;
 	--secundaria: #24ddd6;
 	--destaque1: #710389;
 	--destaque2: #f2ea1c;
-	--hover: #e0fc42;
+	--hover: #5ddb09;
 }
 
 /****** reset ******/
@@ -84,7 +84,6 @@ body {
 
 .logo {	
 	margin: 0 auto;	
-	padding: 10px 0;	
 }
 
 /* tablet */
@@ -139,7 +138,7 @@ body {
 
 .button_buy {
 	border-radius: 15px;
-	color: var(--primaria1);
+	color: var(--primaria3);
 	background-color: var(--destaque2);
 	text-decoration: none;
 	text-align: center;
@@ -214,7 +213,7 @@ body {
 	text-align: center;
 	line-height: 3rem;
 	margin: 60px auto;	
-	color: #fff;
+	color: var(--primaria1);
 }
 
 .tempo-container h2 {
@@ -268,7 +267,8 @@ body {
 	}
 
 	.tempo-icon {
-		width: 134px;
+		width: 175px;
+		font-size: 0.75rem;
 	}
 
 	.tempo-container h2 {
@@ -291,7 +291,8 @@ body {
 	}
 
 	.tempo-icon {
-		width: 50px;
+		width: 75px;
+		font-size: 0.563rem;
 	}
 
 	.tempo-container h2 {
@@ -319,15 +320,13 @@ body {
 
 .feito-header {
 	background-color: var(--secundaria);
+	color: var(--primaria3);
 	text-align: center;
 	font-size: 1.777rem;
 	font-weight: bolder;
 	padding: 40px 0;
-	text-transform: uppercase;	
-}
+	text-transform: uppercase;
 
-.feito-header p {
-	color: var(--primaria1);	
 }
 
 .feito-boxes::before {
@@ -481,7 +480,7 @@ body {
 .footer .button_assinar {
 	border-radius: 15px;
 	color: #fff;
-	border-color: var(--destaque1);
+	border-color: var(--destaque2);
 	background: none;
 	text-decoration: none;
 	text-align: center;
@@ -496,8 +495,8 @@ body {
 }
 
 .footer .button_assinar:hover {
-	background-color: var(--destaque1);
-  	color: #2a2b2a;
+	background-color: var(--primaria1);
+  	color: var(--primaria3);
 }
 
 /* tablet */
